@@ -1,0 +1,54 @@
+.embla {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.embla__slide {
+  flex: 0 0 20%; /* Ensure each slide takes up 20% of the container width to show 5 slides */
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.embla__slide img {
+  border-radius: 50%; /* Make images rounded */
+  width: 100%;
+  height: auto;
+}
+
+.embla__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.embla__button--prev {
+  left: 0;
+}
+
+.embla__button--next {
+  right: 0;
+}
+
+.embla__slide--is-active {
+  backdrop-filter: blur(10px); /* Add backdrop filter */
+  /* You can also add gradient or other effects here */
+}

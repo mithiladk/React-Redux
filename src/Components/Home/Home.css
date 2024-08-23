@@ -1,0 +1,19 @@
+/* Home.css */
+
+.custom-button {
+    background-color: #a07aa5; /* Customize this to match your theme */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .custom-button:hover {
+    background-color: #8a6291; /* Slightly darker on hover */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+  
