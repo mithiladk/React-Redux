@@ -56,7 +56,7 @@ const ShowProduct = () => {
                         <Card
                             sx={{
                                 maxWidth: 345,
-                                height: '420px', // Adjusted height for rating stars
+                                height: '420px', 
                                 display: 'flex',
                                 flexDirection: 'column',
                                 justifyContent: 'space-between',
@@ -171,7 +171,7 @@ const ShowProduct = () => {
                 </SweetAlert>
             )}
             <Box display="flex" justifyContent="center"  bgcolor={'white'}
-            // sx={{width:'140px',alignItems:'center',margin:'40px'}}
+       
             >
         <Pagination
           count={totalPages}
