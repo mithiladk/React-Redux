@@ -148,11 +148,27 @@ const ShowProduct = () => {
             </Grid>
             {isDelete && (
                 <SweetAlert
+                    warning
+                    showCancel
+                    title="Are you sure?"
+                    subtitle={"You will not be able to recover"}
+                    cancelBtnStyle={{
+                        backgroundColor: "red",
+                        padding: 10,
+                        textDecoration: "none",
+                        color: "white",
+                    }}
+                    confirmBtnStyle={{
+                        backgroundColor: "#024b98",
+                        padding: 10,
+                        textDecoration: "none",
+                        color: "white",
+                    }}
                     onConfirm={delete_func}
                     onCancel={() => setIsDelete(false)}
-                    title={"Are you sure?"}
-                    subtitle={"You will not be able to recover"}
-                />
+                >
+                    You will not be able to recover this imaginary file!
+                </SweetAlert>
             )}
             <Box display="flex" justifyContent="center"  bgcolor={'white'}
             // sx={{width:'140px',alignItems:'center',margin:'40px'}}

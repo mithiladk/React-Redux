@@ -17,7 +17,7 @@ const ProductCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     align: 'center',
-    speed: 5, // Increase speed for smoother sliding
+    speed: 5,
   });
 
   const scrollPrev = () => {
@@ -34,7 +34,7 @@ const ProductCarousel = () => {
         width: '100%',
         overflow: 'hidden',
         padding: '50px 0',
-        marginTop: '50px', // Add margin-top to prevent overlap with banner
+        marginTop: '50px', 
         backgroundColor: '#f7e7f3',
         boxShadow: '0px 4px 15px rgba(0, 0, 0, 0.1)',
         position: 'relative',
